@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1s, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    
     <title>Software Quality Assurance - Assignment 2</title>
     <link rel="stylesheet" href="css/jquery.mobile.structure.css">
     <link rel="stylesheet" href="css/jquery.mobile.theme.css">
@@ -18,6 +18,10 @@
         function pushMe(){
             alert('Yeah baby!');
         }
+        //function to change text color to red when clicked
+        function colorFunction(elmnt,clr) {
+        elmnt.style.color = clr;
+        }
     </script>
 </head>
 <body>
@@ -26,9 +30,10 @@
             <h1>Header</h1>
         </div>
         <div role="main" class="ui-content">
-
             Software Quality Assurance - Assignment 2
             <button onclick="pushMe()">Push Me</button>
+            <!--    added a paragraph that changes color when you click it        -->
+            <p id="changeColor" onclick="colorFunction(this, 'red')">Click this text to change the color of it.</p>
 
             I am some content
             <div>All your codez are belong to us!</div>
